@@ -1,0 +1,13 @@
+---
+description: Never commit or push unless the user explicitly asks
+alwaysApply: true
+---
+
+# Git permission
+
+Destination repo (manual push by the user): https://github.com/HighonH2O/Quantiphi_vibe_coding_round
+
+- Do not `git commit` unless the user explicitly asks in that message
+- Do not `git push` unless the user explicitly asks in that message
+- Do not create a PR unless asked
+- The user will push to GitHub themselves

@@ -1,0 +1,14 @@
+{
+  "name": "subscription-tracker-dashboard",
+  "private": true,
+  "description": "Personal finance dashboard for tracking SaaS and streaming subscription renewals.",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npm start --prefix backend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

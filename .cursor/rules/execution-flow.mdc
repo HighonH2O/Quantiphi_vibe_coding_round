@@ -1,0 +1,17 @@
+---
+description: Keep Flow.md accurate for call order across files, functions, and modules
+alwaysApply: true
+---
+
+# Execution flow
+
+Keep `Flow.md` current whenever request paths, imports, or call order change.
+
+`Flow.md` must show:
+- How execution travels between files, functions, and modules
+- What calls what, and in what order
+- Exactly which part of that path is being modified in the current change
+
+Before editing code, state in `Flow.md` the path being touched (example: `EntryForm submit -> POST /api/subscriptions -> validator -> costEngine`). After the edit, update the diagram so it matches the code, not the plan.
+
+If a file is referenced from `app.js` or the frontend, it must exist or the gap must be marked as NOT YET WIRED.

@@ -1,0 +1,19 @@
+---
+description: Log every meaningful code decision and its reasoning in decisions.md
+alwaysApply: true
+---
+
+# Decision log
+
+After any meaningful code change, append an entry to `decisions.md` in the same turn. Do not wait until the end of the session.
+
+Each entry must include:
+- Date and short title
+- Decision (what was chosen)
+- Alternatives considered
+- Why this option won (library, pattern, or tradeoff)
+- What was rejected and the cost of that rejection
+
+Log choices such as: library vs library, folder layout, API shape, where logic lives, persistence, date/money rounding, and UI patterns.
+
+Do not make an undocumented architectural choice. If a decision is reversed later, add a new entry that points at the old one.

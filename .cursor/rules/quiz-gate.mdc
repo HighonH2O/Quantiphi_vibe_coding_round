@@ -1,0 +1,17 @@
+---
+description: Quiz the user after a long change session; keep changes only if they pass
+alwaysApply: true
+---
+
+# Quiz gate before accepting major changes
+
+After a long implementation session, or before treating a major change as accepted, quiz the user on what changed.
+
+Rules:
+- Give a short quiz (4-8 questions) covering architecture, data flow, and the tradeoffs just made
+- Mix "what happens if..." and "why did we..." questions
+- Do not mark the work as accepted until the user answers correctly
+- If they fail, explain the missed points, point at `decisions.md` / `Flow.md`, and re-quiz
+- Do not git commit or push unless the user explicitly asks AND they have passed the quiz for that session
+
+"Accept" means: the change set is considered complete and ready for the user to commit/push later. Until then, treat it as draft work.
