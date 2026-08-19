@@ -212,3 +212,13 @@ Every meaningful choice in this repo is recorded here: what was picked, what was
 
 **Why this won:** "Renewing Soon" still works whenever a reviewer clones the repo. Data file is gitignored so local toggles do not become the committed seed.
 
+---
+
+## 2026-08-19 — Root README for GitHub review
+
+**Decision:** Add `README.md` at the repo root with run commands, stack, API table, and pointers to `Flow.md` / `decisions.md`.
+
+**Alternatives:** No README (reviewers guess `npm run dev`); a long architecture wiki in the README.
+
+**Why this won:** The public GitHub repo is the submission surface. A short README is how someone clones and runs the dashboard without reading the whole source. Deep “why” stays in `decisions.md`; request order stays in `Flow.md`.
+

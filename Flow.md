@@ -2,7 +2,7 @@
 
 How a request travels through this repo: files, functions, and order.
 
-**Current session focus:** dashboard UI + wiring the subscription API so the form, metrics, and pause toggle work end-to-end.
+**Current session focus:** `README.md` only. No runtime path changed. Reviewers start at the README, then `npm run dev` as in Boot below.
 
 ---
 
